@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cghlba0jrpubb"]
 
-[ext_resource type="Script" path="res://room/scene/wall/L_wall.gd" id="1_b7w4b"]
+[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_b7w4b"]
 [ext_resource type="Texture2D" uid="uid://bqx8h4nkh7bnj" path="res://icon.svg" id="2_1pwx1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7om68"]
