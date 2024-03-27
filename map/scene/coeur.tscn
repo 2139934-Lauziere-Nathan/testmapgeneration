@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2yaohuojwvnc"]
+
+[ext_resource type="PackedScene" uid="uid://b0idvgehis82v" path="res://room/scene/empty_room.tscn" id="1_cuib4"]
+
+[node name="Coeur" type="Node2D"]
+
+[node name="emptyRoom" parent="." instance=ExtResource("1_cuib4")]
+position = Vector2(0, 64)
+
+[node name="emptyRoom2" parent="." instance=ExtResource("1_cuib4")]
+position = Vector2(0, -712)
+
+[node name="emptyRoom3" parent="." instance=ExtResource("1_cuib4")]
+position = Vector2(-1272, -712)
+
+[node name="emptyRoom" parent="emptyRoom3" instance=ExtResource("1_cuib4")]
+position = Vector2(2560, 0)
+
+[node name="emptyRoom4" parent="." instance=ExtResource("1_cuib4")]
+position = Vector2(0, -1488)

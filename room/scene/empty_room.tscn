@@ -1,33 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0idvgehis82v"]
+[gd_scene load_steps=8 format=3 uid="uid://b0idvgehis82v"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8g55f"]
-size = Vector2(20, 655)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jell"]
-size = Vector2(1176, 20)
+[ext_resource type="Script" path="res://room/script/CollisionShape2D.gd" id="1_i6oue"]
+[ext_resource type="PackedScene" uid="uid://d3dk13uu7wckk" path="res://room/scene/wall/L_wall.tscn" id="2_u4ooq"]
+[ext_resource type="PackedScene" uid="uid://cjhq0d27lhjwv" path="res://room/scene/wall/Up_R_wall.tscn" id="3_qcnaa"]
+[ext_resource type="PackedScene" uid="uid://cu6vjyhdwpcjo" path="res://room/scene/wall/DW_R_wall.tscn" id="4_fy24v"]
+[ext_resource type="PackedScene" uid="uid://nylwkiy3pqf8" path="res://room/scene/wall/Up_L_wall.tscn" id="5_gbgxc"]
+[ext_resource type="PackedScene" uid="uid://cghlba0jrpubb" path="res://room/scene/wall/R_wall.tscn" id="6_17gn7"]
+[ext_resource type="PackedScene" uid="uid://c585ayhfow5xk" path="res://room/scene/wall/DW_L_wall.tscn" id="7_mvlcr"]
 
 [node name="emptyRoom" type="Node2D"]
+script = ExtResource("1_i6oue")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="LWall" parent="." instance=ExtResource("2_u4ooq")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-3, 326)
-shape = SubResource("RectangleShape2D_8g55f")
+[node name="UpRWall" parent="." instance=ExtResource("3_qcnaa")]
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="DwRWall" parent="." instance=ExtResource("4_fy24v")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(1151, 323)
-shape = SubResource("RectangleShape2D_8g55f")
+[node name="UpLWall" parent="." instance=ExtResource("5_gbgxc")]
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+[node name="RWall" parent="." instance=ExtResource("6_17gn7")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(578, 0)
-shape = SubResource("RectangleShape2D_8jell")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2(566, 638)
-shape = SubResource("RectangleShape2D_8jell")
+[node name="DwLWall" parent="." instance=ExtResource("7_mvlcr")]

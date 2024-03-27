@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxt22jnl2idml"]
+
+[ext_resource type="Script" path="res://debugPerso/CharacterBody2D.gd" id="1_mtoab"]
+[ext_resource type="Texture2D" uid="uid://bqx8h4nkh7bnj" path="res://icon.svg" id="2_bf8wu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qd0ax"]
+
+[node name="perso" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_mtoab")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(5.96046e-07, -0.249996)
+scale = Vector2(0.15625, 0.160156)
+texture = ExtResource("2_bf8wu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_qd0ax")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
