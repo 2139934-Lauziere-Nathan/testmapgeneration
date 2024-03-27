@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cjhq0d27lhjwv"]
 
-[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_scsad"]
+[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_wglke"]
 [ext_resource type="Texture2D" uid="uid://bqx8h4nkh7bnj" path="res://icon.svg" id="2_28ly6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_61fk3"]
@@ -13,7 +13,7 @@ size = Vector2(192, 64)
 size = Vector2(38, 20)
 
 [node name="UpRWall" type="Node2D"]
-script = ExtResource("1_scsad")
+script = ExtResource("1_wglke")
 
 [node name="StaticBody2D3" type="RigidBody2D" parent="."]
 gravity_scale = 0.0

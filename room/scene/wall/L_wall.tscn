@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3dk13uu7wckk"]
 
-[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_v2sq6"]
+[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_k3d54"]
 [ext_resource type="Texture2D" uid="uid://bqx8h4nkh7bnj" path="res://icon.svg" id="2_2fx04"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xm0jl"]
@@ -13,7 +13,7 @@ size = Vector2(64, 168)
 
 [node name="LWall" type="Node2D"]
 position = Vector2(-48, 0)
-script = ExtResource("1_v2sq6")
+script = ExtResource("1_k3d54")
 
 [node name="StaticBody2D" type="RigidBody2D" parent="."]
 gravity_scale = 0.0

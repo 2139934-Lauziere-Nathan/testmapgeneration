@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://c585ayhfow5xk"]
 
-[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_dnui6"]
 [ext_resource type="Script" path="res://map/corridor/script/StaticBody2D11.gd" id="1_eoiji"]
+[ext_resource type="Script" path="res://room/scene/wall/script_Porte.gd" id="1_hw2ak"]
 [ext_resource type="Texture2D" uid="uid://bqx8h4nkh7bnj" path="res://icon.svg" id="2_v5fom"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nnycd"]
@@ -13,7 +13,7 @@ size = Vector2(192, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2lr0"]
 
 [node name="DwLWall" type="Node2D"]
-script = ExtResource("1_dnui6")
+script = ExtResource("1_hw2ak")
 
 [node name="StaticBody2D7" type="RigidBody2D" parent="."]
 position = Vector2(9, 2)
