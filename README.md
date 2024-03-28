@@ -3,3 +3,11 @@ les coter du model de salle empty_room possede des area2D pour detecter si il me
 et avoir un passage consistent, donc tent que les salle son realisable, toute la map est parfaite sans laisser de possibiliter de tomber out-of bound
 
 les corridor pour relier les niveaux n'est pas fini
+ a faire
+- abileter du perso
+	-un grappin
+	-un attaque principale
+	-utulisation de item
+-hub
+-la vie
+-object en main
